@@ -20,12 +20,37 @@ if (isset($_POST['submit'])) {
 
 ?>
 
+<head>
+
+     <link rel="stylesheet" href="inc/magnific/dist/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/colors.css">
+
+
+</head>
+
 <body>
+
+
+
+
+
     <?php if (isset($success) && $success) { ?>
-    <h1>Thank You</h1>
-        <p>Your message has been sent.</p>
+    <div id="post-popup-msg1" class="white-popup mfp-hide">
+            <h1>Thank You</h1>
+            <p>Your message has been sent.</p>
+        </div>
     <?php } else { ?>
-    <h1>Oops!</h1>
-        <p>Sorry, there was a problem sending your message.</p>
+    <div id="post-popup-msg2" class="white-popup mfp-hide">
+            <h1>Oops!</h1>
+            <p>Sorry, there was a problem sending your message.</p>
+        </div>
     <?php } ?>
+
+
+
+    <!-- Magnific Popup core JS file -->
+    <script src="inc/magnific/dist/jquery.magnific-popup.js"></script>
+
 </body>
